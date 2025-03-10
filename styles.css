@@ -85,13 +85,13 @@ h2 {
 
 /* Background images for each crop button */
 .rubber {
-  background-image: url('images/rubber.jpg'); /* Add your rubber image here */
+  background-image: url('rubber.jpg'); /* Add your rubber image here */
 }
 
 .pepper {
-  background-image: url('images/pepper.jpg'); /* Add your pepper image here */
+  background-image: url('pepper.jpg'); /* Add your pepper image here */
 }
 
 .tea {
-  background-image: url('images/tea.jpg'); /* Add your tea image here */
+  background-image: url('tea.jpg'); /* Add your tea image here */
 }

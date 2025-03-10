@@ -1,0 +1,97 @@
+/* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Background image with transparency (dark overlay effect) */
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/* Optional: Add a semi-transparent overlay for better text visibility */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* transparency level */
+  z-index: 0;
+}
+
+/* Content on top of the overlay */
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 50px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 150px; /* adjust size as needed */
+  height: auto;
+}
+
+/* Headings */
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* Button styles */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.crop-button {
+  width: 200px;
+  height: 200px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%; /* makes them round */
+  cursor: pointer;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.crop-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Background images for each crop button */
+.rubber {
+  background-image: url('images/rubber.jpg'); /* Add your rubber image here */
+}
+
+.pepper {
+  background-image: url('images/pepper.jpg'); /* Add your pepper image here */
+}
+
+.tea {
+  background-image: url('images/tea.jpg'); /* Add your tea image here */
+}
